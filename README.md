@@ -4,17 +4,17 @@ The aim of this work is to make the plugin compatible with [Xemu](https://github
 
 ## Major changes
 
-1: The output is assembled into the project directory instead of a temporary location.
+1: The output is assembled into the project directory instead of a temporary location
 
-2: Requirement for VICE has been removed (might be added back later).
+2: Requirement for VICE has been removed (might be added back later)
 
-3: The default parameters will target CSG 4510.
+3: The default parameters will target CSG 4510
 
 ## Installation
 
-1: Clone the repository directly into the TextMate bundles folder (~/Library/Application\ Support/TextMate/Bundles/) as C64TassXEMU.tmbundle.
+1: Clone the repository directly into the TextMate bundles folder (~/Library/Application\ Support/TextMate/Bundles/) as C64TassXEMU.tmbundle
 
-2: Restart TextMate.
+2: Restart TextMate
 
 
 ## Requirements
