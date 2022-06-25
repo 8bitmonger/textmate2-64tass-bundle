@@ -31,10 +31,10 @@ No further configuration is needed. However, there are a few optional environmen
 In particular, Xemu will launch with the newly assembled PRG file if TM_XEMU_PATH is defined. 
 TM_XEMU_OPTIONS will default to -besure switch which makes it faster to work with the emulator.
 
-`TM_XEMU_PATH` path to the Xemu executable (e.g. xmega65)
-`TM_XEMU_OPTIONS` options for the Xemu executable; the assembled prg file is always included regardless of what is defined here
-`TM_64TASS_OPTIONS` can be used to override the default 64tass options (-a --m4510).
-`TM_64TASS_PATH` can be used to override the bundled 64tass version (**64tass Turbo Assembler Macro V1.52.1237?**).
+- `TM_XEMU_PATH` path to the Xemu executable (e.g. xmega65)
+- `TM_XEMU_OPTIONS` options for the Xemu executable; the assembled prg file is always included regardless of what is defined here
+- `TM_64TASS_OPTIONS` can be used to override the default 64tass options (-a --m4510).
+- `TM_64TASS_PATH` can be used to override the bundled 64tass version (**64tass Turbo Assembler Macro V1.52.1237?**).
 
 ## License
 
