@@ -30,6 +30,15 @@ TextMate::Executor.run(build) do |str, type|
   build_errors = true if type == :err
 end
 
+sleep 0.001
+
+if not build_errors and ENV["TM_XEMU_PATH"]
+  xemu_options = ENV["TM_XEMU_OPTIONS"]
+  xemu_options = "-besure" if xemu_options.nil?
+  xemu_options = "-prg #{tmp_file} #{xemu_options}"
+  TextMate::Process.run(["#{ENV['TM_XEMU_PATH']} #{xemu_options}"])
+end
+
 
 
 </string>
