@@ -3,12 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>hthebmlvyznmry@tznvy.pbz</string>
+	<string>8ovgzbatre@tznvy.pbz</string>
 	<key>contactName</key>
-	<string>Uğur "vigo" Özyılmazel</string>
+	<string>8bitmonger</string>
 	<key>description</key>
 	<string>Bundle for 64tass, Commodore 64 assembly command line compiler.
 You can download binary of 64tass at http://tass64.sourceforge.net/
+
+Based on an earlier work by Uğur Özyılmazel (https://github.com/vigo).
 </string>
 	<key>name</key>
 	<string>64tass Bundle</string>

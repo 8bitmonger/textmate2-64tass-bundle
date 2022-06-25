@@ -10,21 +10,17 @@
 require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
 require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
 
-tass_exe = "#{ENV['TM_BUNDLE_SUPPORT']}/bin/64tass"
+tass_exe = ENV["TM_64TASS_PATH"]
+tass_exe = "#{ENV['TM_BUNDLE_SUPPORT']}/bin/64tass" if tass_exe.nil?
 
-unless ENV['TM_VICE_PATH']
-  puts "Please set $TM_VICE_PATH variable..."
-  puts "You can download VICE from:"
-  puts "http://lallafa.de/blog/c64-projects/macvice/"
-  puts "or"
-  puts "http://vice-emu.sourceforge.net/macosx.html"
-  exit
-end
-
-default_compile_options = "-C -a"
+default_compile_options = "-a --m4510"
 default_compile_options = ENV['TM_64TASS_OPTIONS'] if ENV['TM_64TASS_OPTIONS']
 
-tmp_file = "/tmp/program.prg"
+tmp_file = ENV["TM_FILEPATH"].split(".")
+tmp_file.pop
+tmp_file.push('prg')
+tmp_file = tmp_file.join(".")
+
 build_errors = false
 build = [tass_exe]
 build += default_compile_options.split
@@ -34,13 +30,8 @@ TextMate::Executor.run(build) do |str, type|
   build_errors = true if type == :err
 end
 
-sleep(0.001)
-unless build_errors
-  preview = [ENV['TM_VICE_PATH']]
-  preview += ENV['TM_VICE_OPTIONS'].split if ENV['TM_VICE_OPTIONS']
-  preview += [tmp_file]
-  TextMate::Process.run(preview)
-end
+
+
 </string>
 	<key>input</key>
 	<string>none</string>
