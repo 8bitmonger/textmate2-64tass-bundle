@@ -8,7 +8,7 @@ The aim of this work is to make the plugin compatible with [Xemu](https://github
 
 2: The output is assembled into the project directory instead of a temporary location
 
-3: Requirement for VICE has been removed (might be added back later)
+3: Dependency for VICE has been removed (option to use VICE might be added later)
 
 4: The default parameters will target CSG 4510
 
