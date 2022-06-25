@@ -12,7 +12,7 @@ The aim of this work is to make the plugin compatible with [Xemu](https://github
 
 ## Installation
 
-1: Clone the repository directly into the TextMate bundles folder (~/Library/Application\ Support/TextMate/Bundles/) as C64TassXEMU.tmbundle
+1: Clone the repository directly into the TextMate bundles folder (~/Library/Application\ Support/TextMate/Bundles/) as C64TassXemu.tmbundle
 
 2: Restart TextMate
 

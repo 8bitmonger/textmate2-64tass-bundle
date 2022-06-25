@@ -10,10 +10,10 @@
 	<string>Bundle for 64tass, Commodore 64 assembly command line compiler.
 You can download binary of 64tass at http://tass64.sourceforge.net/
 
-Based on an earlier work by Uğur Özyılmazel (https://github.com/vigo).
+Based on earlier work by Uğur Özyılmazel (https://github.com/vigo).
 </string>
 	<key>name</key>
-	<string>64tass Bundle</string>
+	<string>64tass Xemu</string>
 	<key>uuid</key>
 	<string>45776F8E-6555-48C3-A022-72CA543434F9</string>
 </dict>
